@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="419c0a86a2ac45ddac38187c6ceb87dc" Name="Diagram1">
+        <EntityTypeShape EntityType="RequestTrackkingSystemModel.sysdiagrams" Width="1.5" PointX="2.75" PointY="3.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="RequestTrackkingSystemModel.tbl_Kurum" Width="1.5" PointX="0.75" PointY="54.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="RequestTrackkingSystemModel.tbl_KurumIlgiliKisi" Width="1.5" PointX="3" PointY="48.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="RequestTrackkingSystemModel.tbl_KurumsalTalep" Width="1.5" PointX="14.25" PointY="48" IsExpanded="true" />
+        <EntityTypeShape EntityType="RequestTrackkingSystemModel.tbl_KurumsalTalepSurec" Width="1.5" PointX="16.5" PointY="59.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="RequestTrackkingSystemModel.tbl_KurumsalTalepYetki" Width="1.5" PointX="19.5" PointY="54.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="RequestTrackkingSystemModel.tbl_Dokuman" Width="1.5" PointX="6" PointY="47.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="RequestTrackkingSystemModel.tbl_DosyaArsiv" Width="1.5" PointX="3.75" PointY="40.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="RequestTrackkingSystemModel.tbl_DosyaArsivSurec" Width="1.5" PointX="12" PointY="39" IsExpanded="true" />
+        <EntityTypeShape EntityType="RequestTrackkingSystemModel.tbl_DosyaArsivYetki" Width="1.5" PointX="14.25" PointY="43.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="RequestTrackkingSystemModel.tbl_Durum" Width="1.5" PointX="4.75" PointY="3.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="RequestTrackkingSystemModel.tbl_Duyuru" Width="1.5" PointX="0.75" PointY="0.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="RequestTrackkingSystemModel.tbl_DuyuruYetki" Width="1.5" PointX="3" PointY="1.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="RequestTrackkingSystemModel.tbl_EgitimDurumu" Width="1.5" PointX="5.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="RequestTrackkingSystemModel.tbl_ErrorLog" Width="1.5" PointX="0.75" PointY="6.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="RequestTrackkingSystemModel.tbl_GelisYolu" Width="1.5" PointX="2.75" PointY="6.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="RequestTrackkingSystemModel.tbl_GorevKategori" Width="1.5" PointX="0.75" PointY="59.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="RequestTrackkingSystemModel.tbl_GorusOneri" Width="1.5" PointX="11.25" PointY="46.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="RequestTrackkingSystemModel.tbl_Grup" Width="1.5" PointX="6.75" PointY="38.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="RequestTrackkingSystemModel.tbl_GrupOrtak" Width="1.5" PointX="9" PointY="38.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="RequestTrackkingSystemModel.tbl_Hatirlatma" Width="1.5" PointX="17.25" PointY="38.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="RequestTrackkingSystemModel.tbl_Il" Width="1.5" PointX="0.75" PointY="63.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="RequestTrackkingSystemModel.tbl_Ilce" Width="1.5" PointX="3" PointY="68.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="RequestTrackkingSystemModel.tbl_IlgiliKullanici" Width="1.5" PointX="9" PointY="34.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="RequestTrackkingSystemModel.tbl_KapiGiris" Width="1.5" PointX="0.75" PointY="43" IsExpanded="true" />
+        <EntityTypeShape EntityType="RequestTrackkingSystemModel.tbl_KapiGirisKisi" Width="1.5" PointX="3" PointY="45" IsExpanded="true" />
+        <EntityTypeShape EntityType="RequestTrackkingSystemModel.tbl_KapiGirisSurec" Width="1.5" PointX="3" PointY="37.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="RequestTrackkingSystemModel.tbl_Kategori" Width="1.5" PointX="12" PointY="71" IsExpanded="true" />
+        <EntityTypeShape EntityType="RequestTrackkingSystemModel.tbl_Kisi" Width="1.5" PointX="0.75" PointY="47.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="RequestTrackkingSystemModel.tbl_KisiGorev" Width="1.5" PointX="3" PointY="52.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="RequestTrackkingSystemModel.tbl_KisiMernis" Width="1.5" PointX="6.75" PointY="3.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="RequestTrackkingSystemModel.tbl_KisiSenkronizasyon" Width="1.5" PointX="8.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="RequestTrackkingSystemModel.tbl_KisiTelefon" Width="1.5" PointX="3" PointY="64.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="RequestTrackkingSystemModel.tbl_KulIlgiliKullanici" Width="1.5" PointX="11.25" PointY="50.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="RequestTrackkingSystemModel.tbl_Kullanici" Width="1.5" PointX="9" PointY="48" IsExpanded="true" />
+        <EntityTypeShape EntityType="RequestTrackkingSystemModel.tbl_KullaniciAyar" Width="1.5" PointX="11.25" PointY="53.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="RequestTrackkingSystemModel.tbl_KullaniciLog" Width="1.5" PointX="11.25" PointY="56.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="RequestTrackkingSystemModel.tbl_Mesajlasma" Width="1.5" PointX="11.25" PointY="59.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="RequestTrackkingSystemModel.tbl_MesajlasmaLog" Width="1.5" PointX="13.5" PointY="60.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="RequestTrackkingSystemModel.tbl_Not" Width="1.5" PointX="6" PointY="44" IsExpanded="true" />
+        <EntityTypeShape EntityType="RequestTrackkingSystemModel.tbl_PrintMode" Width="1.5" PointX="4.75" PointY="8.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="RequestTrackkingSystemModel.tbl_Rol" Width="1.5" PointX="14.25" PointY="54.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="RequestTrackkingSystemModel.tbl_SikKullanilanlarMenu" Width="1.5" PointX="11.25" PointY="64.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="RequestTrackkingSystemModel.tbl_SistemSmsAyar" Width="1.5" PointX="3.75" PointY="57.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="RequestTrackkingSystemModel.tbl_SistemSmsMailKisi" Width="1.5" PointX="6" PointY="54.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="RequestTrackkingSystemModel.tbl_SMS" Width="1.5" PointX="3" PointY="93.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="RequestTrackkingSystemModel.tbl_Tekrar" Width="1.5" PointX="15" PointY="39.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="RequestTrackkingSystemModel.tbl_TempDokuman" Width="1.5" PointX="8.75" PointY="6.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="RequestTrackkingSystemModel.tbl_Sekreterya" Width="1.5" PointX="9" PointY="42.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="RequestTrackkingSystemModel.tbl_SekreteryaSurec" Width="1.5" PointX="11.25" PointY="43" IsExpanded="true" />
+        <EntityTypeShape EntityType="RequestTrackkingSystemModel.tbl_Talimat" Width="1.5" PointX="19.5" PointY="43.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="RequestTrackkingSystemModel.tbl_TalimatGorev" Width="1.5" PointX="21.75" PointY="42.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="RequestTrackkingSystemModel.tbl_TalimatGorevSurec" Width="1.5" PointX="24" PointY="43.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="RequestTrackkingSystemModel.tbl_TalimatGorevYetki" Width="1.5" PointX="26.25" PointY="43.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="RequestTrackkingSystemModel.tbl_Talep" Width="1.5" PointX="9" PointY="53.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="RequestTrackkingSystemModel.tbl_TalepKategori" Width="1.5" PointX="14.25" PointY="57.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="RequestTrackkingSystemModel.tbl_TalepReferans" Width="1.5" PointX="17.25" PointY="56.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="RequestTrackkingSystemModel.tbl_TalepSurec" Width="1.5" PointX="11.25" PointY="67.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="RequestTrackkingSystemModel.tbl_TalepYetki" Width="1.5" PointX="17.25" PointY="51.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="RequestTrackkingSystemModel.tbl_ProgramEntegre" Width="1.5" PointX="0.75" PointY="9.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="RequestTrackkingSystemModel.tbl_SiralamaGrup" Width="1.5" PointX="15" PointY="36.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="RequestTrackkingSystemModel.tbl_Ziyaret" Width="1.5" PointX="17.25" PointY="42.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="RequestTrackkingSystemModel.tbl_ZiyaretDurum" Width="1.5" PointX="6.75" PointY="9.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="RequestTrackkingSystemModel.tbl_ZiyaretKisi" Width="1.5" PointX="19.5" PointY="47.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="RequestTrackkingSystemModel.tbl_ZiyaretSurec" Width="1.5" PointX="19.5" PointY="51.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="RequestTrackkingSystemModel.tbl_KisiSenkronizasyonBackup" Width="1.5" PointX="8.75" PointY="9.75" IsExpanded="true" />
+        <AssociationConnector Association="RequestTrackkingSystemModel.FK_tbl_KurumIlgiliKisi_tbl_Kurum" ManuallyRouted="false" />
+        <AssociationConnector Association="RequestTrackkingSystemModel.FK_tbl_KurumsalTalep_tbl_Kurum" ManuallyRouted="false" />
+        <AssociationConnector Association="RequestTrackkingSystemModel.FK_tbl_KurumIlgiliKisi_tbl_Kisi" ManuallyRouted="false" />
+        <AssociationConnector Association="RequestTrackkingSystemModel.FK_tbl_KurumsalTalep_tbl_KurumIlgiliKisi" ManuallyRouted="false" />
+        <AssociationConnector Association="RequestTrackkingSystemModel.FK_tbl_KTalepYetki_tbl_KurumsalTalep" ManuallyRouted="false" />
+        <AssociationConnector Association="RequestTrackkingSystemModel.FK_tbl_KurumsalTalep_tbl_Grup" ManuallyRouted="false" />
+        <AssociationConnector Association="RequestTrackkingSystemModel.FK_tbl_KurumsalTalepSurec_tbl_KurumsalTalep" ManuallyRouted="false" />
+        <AssociationConnector Association="RequestTrackkingSystemModel.FK_tbl_KTalepYetki_tbl_Grup" ManuallyRouted="false" />
+        <AssociationConnector Association="RequestTrackkingSystemModel.FK_tbl_KTalepYetki_tbl_Kullanici" ManuallyRouted="false" />
+        <AssociationConnector Association="RequestTrackkingSystemModel.FK_tbl_Dokuman_tbl_DosyaArsiv" ManuallyRouted="false" />
+        <AssociationConnector Association="RequestTrackkingSystemModel.FK_tbl_Dokuman_tbl_Kisi" ManuallyRouted="false" />
+        <AssociationConnector Association="RequestTrackkingSystemModel.FK_tbl_Dokuman_tbl_Talep" ManuallyRouted="false" />
+        <AssociationConnector Association="RequestTrackkingSystemModel.FK_tbl_Dokuman_tbl_TalepSurec" ManuallyRouted="false" />
+        <AssociationConnector Association="RequestTrackkingSystemModel.FK_tbl_Dokuman_tbl_TalimatGorev" ManuallyRouted="false" />
+        <AssociationConnector Association="RequestTrackkingSystemModel.FK_tbl_Dokuman_tbl_Ziyaret" ManuallyRouted="false" />
+        <AssociationConnector Association="RequestTrackkingSystemModel.FK_tbl_Dokuman_tbl_ZiyaretSurec" ManuallyRouted="false" />
+        <AssociationConnector Association="RequestTrackkingSystemModel.FK_tbl_DosyaArsivSurec_tbl_DosyaArsiv" ManuallyRouted="false" />
+        <AssociationConnector Association="RequestTrackkingSystemModel.FK_tbl_DosyaArsivYetki_tbl_DosyaArsivYetki" ManuallyRouted="false" />
+        <AssociationConnector Association="RequestTrackkingSystemModel.FK_tbl_DosyaArsivYetki_tbl_DosyaArsivSurec" ManuallyRouted="false" />
+        <AssociationConnector Association="RequestTrackkingSystemModel.FK_tbl_DosyaArsivYetki_tbl_Kullanici" ManuallyRouted="false" />
+        <AssociationConnector Association="RequestTrackkingSystemModel.FK_tbl_DuyuruYetki_tbl_Duyuru" ManuallyRouted="false" />
+        <AssociationConnector Association="RequestTrackkingSystemModel.FK_tbl_KisiGorev_tbl_GorevKategori" ManuallyRouted="false" />
+        <AssociationConnector Association="RequestTrackkingSystemModel.FK_tbl_KisiGorev_tbl_GorevKategori1" ManuallyRouted="false" />
+        <AssociationConnector Association="RequestTrackkingSystemModel.FK_tbl_GorusOneri_tbl_Kullanici" ManuallyRouted="false" />
+        <AssociationConnector Association="RequestTrackkingSystemModel.FK_tbl_GrupOrtak_tbl_GrupOrtak" ManuallyRouted="false" />
+        <AssociationConnector Association="RequestTrackkingSystemModel.FK_tbl_IlgiliKullanici_tbl_Grup1" ManuallyRouted="false" />
+        <AssociationConnector Association="RequestTrackkingSystemModel.FK_tbl_Kullanici_tbl_Grup" ManuallyRouted="false" />
+        <AssociationConnector Association="RequestTrackkingSystemModel.FK_tbl_Not_tbl_Grup" ManuallyRouted="false" />
+        <AssociationConnector Association="RequestTrackkingSystemModel.FK_tbl_Sekreterya_tbl_Grup" ManuallyRouted="false" />
+        <AssociationConnector Association="RequestTrackkingSystemModel.FK_tbl_Talep_tbl_Grup" ManuallyRouted="false" />
+        <AssociationConnector Association="RequestTrackkingSystemModel.FK_tbl_Yetki_tbl_Grup" ManuallyRouted="false" />
+        <AssociationConnector Association="RequestTrackkingSystemModel.FK_tbl_Ziyaret_tbl_Grup" ManuallyRouted="false" />
+        <AssociationConnector Association="RequestTrackkingSystemModel.FK_tbl_Hatirlatma_tbl_ProgramTekrar" ManuallyRouted="false" />
+        <AssociationConnector Association="RequestTrackkingSystemModel.FK_tbl_Ilce_tbl_Il" ManuallyRouted="false" />
+        <AssociationConnector Association="RequestTrackkingSystemModel.FK_tbl_KisiGorev_tbl_Il" ManuallyRouted="false" />
+        <AssociationConnector Association="RequestTrackkingSystemModel.FK_tbl_KapiGirisKisi_tbl_KapiGiris" ManuallyRouted="false" />
+        <AssociationConnector Association="RequestTrackkingSystemModel.FK_tbl_KapiGirisSurec_tbl_KapiGiris" ManuallyRouted="false" />
+        <AssociationConnector Association="RequestTrackkingSystemModel.FK_tbl_KapiGirisKisi_tbl_Kisi" ManuallyRouted="false" />
+        <AssociationConnector Association="RequestTrackkingSystemModel.FK_tbl_TalepKategori_tbl_Kategori1" ManuallyRouted="false" />
+        <AssociationConnector Association="RequestTrackkingSystemModel.FK_tbl_KisiGorev_tbl_Kisi" ManuallyRouted="false" />
+        <AssociationConnector Association="RequestTrackkingSystemModel.FK_tbl_KisiNot_tbl_Kisi1" ManuallyRouted="false" />
+        <AssociationConnector Association="RequestTrackkingSystemModel.FK_tbl_KisiTelefon_tbl_Kisi" ManuallyRouted="false" />
+        <AssociationConnector Association="RequestTrackkingSystemModel.FK_tbl_Kullanici_tbl_Kisi" ManuallyRouted="false" />
+        <AssociationConnector Association="RequestTrackkingSystemModel.FK_tbl_Sekreterya_tbl_Kisi" ManuallyRouted="false" />
+        <AssociationConnector Association="RequestTrackkingSystemModel.FK_tbl_SistemSmsMailKisi_tbl_Kisi" ManuallyRouted="false" />
+        <AssociationConnector Association="RequestTrackkingSystemModel.FK_tbl_SMS_tbl_Kisi" ManuallyRouted="false" />
+        <AssociationConnector Association="RequestTrackkingSystemModel.FK_tbl_Talep_tbl_Kisi" ManuallyRouted="false" />
+        <AssociationConnector Association="RequestTrackkingSystemModel.FK_tbl_TalepReferans_tbl_Kisi" ManuallyRouted="false" />
+        <AssociationConnector Association="RequestTrackkingSystemModel.FK_tbl_ZiyaretKisi_tbl_Kisi" ManuallyRouted="false" />
+        <AssociationConnector Association="RequestTrackkingSystemModel.FK_tbl_KulIlgiliKullanici_tbl_Kullanici" ManuallyRouted="false" />
+        <AssociationConnector Association="RequestTrackkingSystemModel.FK_tbl_KullaniciAyar_tbl_Kullanici" ManuallyRouted="false" />
+        <AssociationConnector Association="RequestTrackkingSystemModel.FK_tbl_KullaniciLog_tbl_Kullanici" ManuallyRouted="false" />
+        <AssociationConnector Association="RequestTrackkingSystemModel.FK_tbl_Mesajlasma_tbl_Kullanici" ManuallyRouted="false" />
+        <AssociationConnector Association="RequestTrackkingSystemModel.FK_tbl_SikKullanilanlarMenu_tbl_Kullanici" ManuallyRouted="false" />
+        <AssociationConnector Association="RequestTrackkingSystemModel.FK_tbl_TalepYetki_tbl_Kullanici" ManuallyRouted="false" />
+        <AssociationConnector Association="RequestTrackkingSystemModel.FK_tbl_Ziyaret_tbl_Kullanici" ManuallyRouted="false" />
+        <AssociationConnector Association="RequestTrackkingSystemModel.FK_tbl_MesajlasmaLog_tbl_Mesajlasma" ManuallyRouted="false" />
+        <AssociationConnector Association="RequestTrackkingSystemModel.FK_tbl_SistemSmsMailKisi_tbl_SistemSmsAyar" ManuallyRouted="false" />
+        <AssociationConnector Association="RequestTrackkingSystemModel.FK_tbl_Ziyaret_tbl_Tekrar" ManuallyRouted="false" />
+        <AssociationConnector Association="RequestTrackkingSystemModel.FK_tbl_SekreteryaSurec_tbl_Sekreterya" ManuallyRouted="false" />
+        <AssociationConnector Association="RequestTrackkingSystemModel.FK_tbl_Talimat_tbl_Ziyaret" ManuallyRouted="false" />
+        <AssociationConnector Association="RequestTrackkingSystemModel.FK_tbl_TalimatGorev_tbl_Talimat" ManuallyRouted="false" />
+        <AssociationConnector Association="RequestTrackkingSystemModel.FK_TalimatGorevSurec_TalimatGorev" ManuallyRouted="false" />
+        <AssociationConnector Association="RequestTrackkingSystemModel.FK_tbl_TalimatYetki_tbl_TalimatGorev" ManuallyRouted="false" />
+        <AssociationConnector Association="RequestTrackkingSystemModel.FK_tbl_TalimatGorevYetki_tbl_TalimatGorevSurec" ManuallyRouted="false" />
+        <AssociationConnector Association="RequestTrackkingSystemModel.FK_tbl_KayitSurec_tbl_Kayit" ManuallyRouted="false" />
+        <AssociationConnector Association="RequestTrackkingSystemModel.FK_tbl_TalepKategori_tbl_Talep" ManuallyRouted="false" />
+        <AssociationConnector Association="RequestTrackkingSystemModel.FK_tbl_TalepReferans_tbl_Talep" ManuallyRouted="false" />
+        <AssociationConnector Association="RequestTrackkingSystemModel.FK_tbl_Yetki_tbl_Talep" ManuallyRouted="false" />
+        <AssociationConnector Association="RequestTrackkingSystemModel.FK_tbl_Ziyaret_tbl_SiralamaGrup" ManuallyRouted="false" />
+        <AssociationConnector Association="RequestTrackkingSystemModel.FK_tbl_ZiyaretKisi_tbl_Ziyaret" ManuallyRouted="false" />
+        <AssociationConnector Association="RequestTrackkingSystemModel.FK_tbl_ZiyaretTalepSurec_tbl_ZiyaretAramaTalep" ManuallyRouted="false" />
+        <AssociationConnector Association="RequestTrackkingSystemModel.tbl_GrupRol" ManuallyRouted="false" />
+        <AssociationConnector Association="RequestTrackkingSystemModel.tbl_KullaniciRol" ManuallyRouted="false" />
+        <AssociationConnector Association="RequestTrackkingSystemModel.tbl_ZiyaretTalep" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>
