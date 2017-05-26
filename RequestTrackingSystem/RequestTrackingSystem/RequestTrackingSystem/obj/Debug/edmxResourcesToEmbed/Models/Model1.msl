@@ -1,0 +1,937 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="RequestTrackkingSystemModelStoreContainer" CdmEntityContainer="RequestTrackkingSystemEntities">
+    <EntitySetMapping Name="sysdiagrams">
+      <EntityTypeMapping TypeName="RequestTrackkingSystemModel.sysdiagrams">
+        <MappingFragment StoreEntitySet="sysdiagrams">
+          <ScalarProperty Name="name" ColumnName="name" />
+          <ScalarProperty Name="principal_id" ColumnName="principal_id" />
+          <ScalarProperty Name="diagram_id" ColumnName="diagram_id" />
+          <ScalarProperty Name="version" ColumnName="version" />
+          <ScalarProperty Name="definition" ColumnName="definition" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tbl_Kurum">
+      <EntityTypeMapping TypeName="RequestTrackkingSystemModel.tbl_Kurum">
+        <MappingFragment StoreEntitySet="tbl_Kurum">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="Adi" ColumnName="Adi" />
+          <ScalarProperty Name="Adres" ColumnName="Adres" />
+          <ScalarProperty Name="Aciklama" ColumnName="Aciklama" />
+          <ScalarProperty Name="SecimTur" ColumnName="SecimTur" />
+          <ScalarProperty Name="UstID" ColumnName="UstID" />
+          <ScalarProperty Name="SiraNo" ColumnName="SiraNo" />
+          <ScalarProperty Name="EklenmeTarihi" ColumnName="EklenmeTarihi" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tbl_KurumIlgiliKisi">
+      <EntityTypeMapping TypeName="RequestTrackkingSystemModel.tbl_KurumIlgiliKisi">
+        <MappingFragment StoreEntitySet="tbl_KurumIlgiliKisi">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="KisiID" ColumnName="KisiID" />
+          <ScalarProperty Name="KurumID" ColumnName="KurumID" />
+          <ScalarProperty Name="IlID" ColumnName="IlID" />
+          <ScalarProperty Name="IlceID" ColumnName="IlceID" />
+          <ScalarProperty Name="Aciklama" ColumnName="Aciklama" />
+          <ScalarProperty Name="EklenmeTarihi" ColumnName="EklenmeTarihi" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tbl_KurumsalTalep">
+      <EntityTypeMapping TypeName="RequestTrackkingSystemModel.tbl_KurumsalTalep">
+        <MappingFragment StoreEntitySet="tbl_KurumsalTalep">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="KurumID" ColumnName="KurumID" />
+          <ScalarProperty Name="Aciklama" ColumnName="Aciklama" />
+          <ScalarProperty Name="IlID" ColumnName="IlID" />
+          <ScalarProperty Name="IlceID" ColumnName="IlceID" />
+          <ScalarProperty Name="KategoriID" ColumnName="KategoriID" />
+          <ScalarProperty Name="IlgiliKisiID" ColumnName="IlgiliKisiID" />
+          <ScalarProperty Name="EklenmeTarihi" ColumnName="EklenmeTarihi" />
+          <ScalarProperty Name="OncelikID" ColumnName="OncelikID" />
+          <ScalarProperty Name="DurumID" ColumnName="DurumID" />
+          <ScalarProperty Name="IslemKulID" ColumnName="IslemKulID" />
+          <ScalarProperty Name="GrupID" ColumnName="GrupID" />
+          <ScalarProperty Name="isDeleted" ColumnName="isDeleted" />
+          <ScalarProperty Name="HatirlatmaTarihi" ColumnName="HatirlatmaTarihi" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tbl_KurumsalTalepSurec">
+      <EntityTypeMapping TypeName="RequestTrackkingSystemModel.tbl_KurumsalTalepSurec">
+        <MappingFragment StoreEntitySet="tbl_KurumsalTalepSurec">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="KurumsalTalepID" ColumnName="KurumsalTalepID" />
+          <ScalarProperty Name="Aciklama" ColumnName="Aciklama" />
+          <ScalarProperty Name="TurID" ColumnName="TurID" />
+          <ScalarProperty Name="EklenmeTarihi" ColumnName="EklenmeTarihi" />
+          <ScalarProperty Name="IslemKulID" ColumnName="IslemKulID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tbl_KurumsalTalepYetki">
+      <EntityTypeMapping TypeName="RequestTrackkingSystemModel.tbl_KurumsalTalepYetki">
+        <MappingFragment StoreEntitySet="tbl_KurumsalTalepYetki">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="KTalepID" ColumnName="KTalepID" />
+          <ScalarProperty Name="GrupID" ColumnName="GrupID" />
+          <ScalarProperty Name="YetkiTurID" ColumnName="YetkiTurID" />
+          <ScalarProperty Name="EklenmeTarihi" ColumnName="EklenmeTarihi" />
+          <ScalarProperty Name="EkleyenKullaniciID" ColumnName="EkleyenKullaniciID" />
+          <ScalarProperty Name="KullaniciID" ColumnName="KullaniciID" />
+          <ScalarProperty Name="SurecID" ColumnName="SurecID" />
+          <ScalarProperty Name="isAktif" ColumnName="isAktif" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tbl_Dokuman">
+      <EntityTypeMapping TypeName="RequestTrackkingSystemModel.tbl_Dokuman">
+        <MappingFragment StoreEntitySet="tbl_Dokuman">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="IlgiliID" ColumnName="IlgiliID" />
+          <ScalarProperty Name="TurID" ColumnName="TurID" />
+          <ScalarProperty Name="DokumanAdi" ColumnName="DokumanAdi" />
+          <ScalarProperty Name="EklenmeTarihi" ColumnName="EklenmeTarihi" />
+          <ScalarProperty Name="IslemKulID" ColumnName="IslemKulID" />
+          <ScalarProperty Name="Aciklama" ColumnName="Aciklama" />
+          <ScalarProperty Name="Boyut" ColumnName="Boyut" />
+          <ScalarProperty Name="Uzanti" ColumnName="Uzanti" />
+          <ScalarProperty Name="Dosya" ColumnName="Dosya" />
+          <ScalarProperty Name="TalepID" ColumnName="TalepID" />
+          <ScalarProperty Name="TalepSurecID" ColumnName="TalepSurecID" />
+          <ScalarProperty Name="ZiyaretID" ColumnName="ZiyaretID" />
+          <ScalarProperty Name="ZiyaretSurecID" ColumnName="ZiyaretSurecID" />
+          <ScalarProperty Name="TalimatGorevID" ColumnName="TalimatGorevID" />
+          <ScalarProperty Name="KisiID" ColumnName="KisiID" />
+          <ScalarProperty Name="DosyaArsivID" ColumnName="DosyaArsivID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tbl_DosyaArsiv">
+      <EntityTypeMapping TypeName="RequestTrackkingSystemModel.tbl_DosyaArsiv">
+        <MappingFragment StoreEntitySet="tbl_DosyaArsiv">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="Aciklama" ColumnName="Aciklama" />
+          <ScalarProperty Name="IslemKulID" ColumnName="IslemKulID" />
+          <ScalarProperty Name="EklenmeTarihi" ColumnName="EklenmeTarihi" />
+          <ScalarProperty Name="YetkiTurID" ColumnName="YetkiTurID" />
+          <ScalarProperty Name="isOncelikli" ColumnName="isOncelikli" />
+          <ScalarProperty Name="IlID" ColumnName="IlID" />
+          <ScalarProperty Name="IlceID" ColumnName="IlceID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tbl_DosyaArsivSurec">
+      <EntityTypeMapping TypeName="RequestTrackkingSystemModel.tbl_DosyaArsivSurec">
+        <MappingFragment StoreEntitySet="tbl_DosyaArsivSurec">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="DosyaArsivID" ColumnName="DosyaArsivID" />
+          <ScalarProperty Name="Aciklama" ColumnName="Aciklama" />
+          <ScalarProperty Name="IslemKulID" ColumnName="IslemKulID" />
+          <ScalarProperty Name="SurecTurID" ColumnName="SurecTurID" />
+          <ScalarProperty Name="EklenmeTarihi" ColumnName="EklenmeTarihi" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tbl_DosyaArsivYetki">
+      <EntityTypeMapping TypeName="RequestTrackkingSystemModel.tbl_DosyaArsivYetki">
+        <MappingFragment StoreEntitySet="tbl_DosyaArsivYetki">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="DosyaArsivID" ColumnName="DosyaArsivID" />
+          <ScalarProperty Name="KullaniciID" ColumnName="KullaniciID" />
+          <ScalarProperty Name="GrupID" ColumnName="GrupID" />
+          <ScalarProperty Name="isAktif" ColumnName="isAktif" />
+          <ScalarProperty Name="DosyaArsivSurecID" ColumnName="DosyaArsivSurecID" />
+          <ScalarProperty Name="IslemKulID" ColumnName="IslemKulID" />
+          <ScalarProperty Name="EklenmeTarihi" ColumnName="EklenmeTarihi" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tbl_Durum">
+      <EntityTypeMapping TypeName="RequestTrackkingSystemModel.tbl_Durum">
+        <MappingFragment StoreEntitySet="tbl_Durum">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="Adi" ColumnName="Adi" />
+          <ScalarProperty Name="isSurec" ColumnName="isSurec" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tbl_Duyuru">
+      <EntityTypeMapping TypeName="RequestTrackkingSystemModel.tbl_Duyuru">
+        <MappingFragment StoreEntitySet="tbl_Duyuru">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="Aciklama" ColumnName="Aciklama" />
+          <ScalarProperty Name="SonTarih" ColumnName="SonTarih" />
+          <ScalarProperty Name="IslemKulID" ColumnName="IslemKulID" />
+          <ScalarProperty Name="EklenmeTarihi" ColumnName="EklenmeTarihi" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tbl_DuyuruYetki">
+      <EntityTypeMapping TypeName="RequestTrackkingSystemModel.tbl_DuyuruYetki">
+        <MappingFragment StoreEntitySet="tbl_DuyuruYetki">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="DuyuruID" ColumnName="DuyuruID" />
+          <ScalarProperty Name="GrupID" ColumnName="GrupID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tbl_EgitimDurumu">
+      <EntityTypeMapping TypeName="RequestTrackkingSystemModel.tbl_EgitimDurumu">
+        <MappingFragment StoreEntitySet="tbl_EgitimDurumu">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="Adi" ColumnName="Adi" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tbl_ErrorLog">
+      <EntityTypeMapping TypeName="RequestTrackkingSystemModel.tbl_ErrorLog">
+        <MappingFragment StoreEntitySet="tbl_ErrorLog">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="KulID" ColumnName="KulID" />
+          <ScalarProperty Name="Aciklama" ColumnName="Aciklama" />
+          <ScalarProperty Name="Tarih" ColumnName="Tarih" />
+          <ScalarProperty Name="Baslik" ColumnName="Baslik" />
+          <ScalarProperty Name="Url" ColumnName="Url" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tbl_GelisYolu">
+      <EntityTypeMapping TypeName="RequestTrackkingSystemModel.tbl_GelisYolu">
+        <MappingFragment StoreEntitySet="tbl_GelisYolu">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="Adi" ColumnName="Adi" />
+          <ScalarProperty Name="EklenmeTarihi" ColumnName="EklenmeTarihi" />
+          <ScalarProperty Name="IslemKulID" ColumnName="IslemKulID" />
+          <ScalarProperty Name="TurID" ColumnName="TurID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tbl_GorevKategori">
+      <EntityTypeMapping TypeName="RequestTrackkingSystemModel.tbl_GorevKategori">
+        <MappingFragment StoreEntitySet="tbl_GorevKategori">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="Adi" ColumnName="Adi" />
+          <ScalarProperty Name="UstID" ColumnName="UstID" />
+          <ScalarProperty Name="EklenmeTarihi" ColumnName="EklenmeTarihi" />
+          <ScalarProperty Name="SiraNo" ColumnName="SiraNo" />
+          <ScalarProperty Name="SecimTur" ColumnName="SecimTur" />
+          <ScalarProperty Name="Limit" ColumnName="Limit" />
+          <ScalarProperty Name="Puan" ColumnName="Puan" />
+          <ScalarProperty Name="GorunenIsim" ColumnName="GorunenIsim" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tbl_GorusOneri">
+      <EntityTypeMapping TypeName="RequestTrackkingSystemModel.tbl_GorusOneri">
+        <MappingFragment StoreEntitySet="tbl_GorusOneri">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="Mesaj" ColumnName="Mesaj" />
+          <ScalarProperty Name="KulID" ColumnName="KulID" />
+          <ScalarProperty Name="EklenmeTarihi" ColumnName="EklenmeTarihi" />
+          <ScalarProperty Name="IlgiliMesajID" ColumnName="IlgiliMesajID" />
+          <ScalarProperty Name="isOkundu" ColumnName="isOkundu" />
+          <ScalarProperty Name="Baslik" ColumnName="Baslik" />
+          <ScalarProperty Name="DokumanAdi" ColumnName="DokumanAdi" />
+          <ScalarProperty Name="Dosya" ColumnName="Dosya" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tbl_Grup">
+      <EntityTypeMapping TypeName="RequestTrackkingSystemModel.tbl_Grup">
+        <MappingFragment StoreEntitySet="tbl_Grup">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="Adi" ColumnName="Adi" />
+          <ScalarProperty Name="EklenmeTarihi" ColumnName="EklenmeTarihi" />
+          <ScalarProperty Name="UstID" ColumnName="UstID" />
+          <ScalarProperty Name="SiraNo" ColumnName="SiraNo" />
+          <ScalarProperty Name="YetkiNo" ColumnName="YetkiNo" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tbl_GrupOrtak">
+      <EntityTypeMapping TypeName="RequestTrackkingSystemModel.tbl_GrupOrtak">
+        <MappingFragment StoreEntitySet="tbl_GrupOrtak">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="GrupKendi" ColumnName="GrupKendi" />
+          <ScalarProperty Name="GrupKarsi" ColumnName="GrupKarsi" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tbl_Hatirlatma">
+      <EntityTypeMapping TypeName="RequestTrackkingSystemModel.tbl_Hatirlatma">
+        <MappingFragment StoreEntitySet="tbl_Hatirlatma">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="Aciklama" ColumnName="Aciklama" />
+          <ScalarProperty Name="Tarih" ColumnName="Tarih" />
+          <ScalarProperty Name="IslemKulID" ColumnName="IslemKulID" />
+          <ScalarProperty Name="GrupID" ColumnName="GrupID" />
+          <ScalarProperty Name="TekrarID" ColumnName="TekrarID" />
+          <ScalarProperty Name="EklenmeTarihi" ColumnName="EklenmeTarihi" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tbl_Il">
+      <EntityTypeMapping TypeName="RequestTrackkingSystemModel.tbl_Il">
+        <MappingFragment StoreEntitySet="tbl_Il">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="Adi" ColumnName="Adi" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tbl_Ilce">
+      <EntityTypeMapping TypeName="RequestTrackkingSystemModel.tbl_Ilce">
+        <MappingFragment StoreEntitySet="tbl_Ilce">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="Adi" ColumnName="Adi" />
+          <ScalarProperty Name="IlID" ColumnName="IlID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tbl_IlgiliKullanici">
+      <EntityTypeMapping TypeName="RequestTrackkingSystemModel.tbl_IlgiliKullanici">
+        <MappingFragment StoreEntitySet="tbl_IlgiliKullanici">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="GrupID" ColumnName="GrupID" />
+          <ScalarProperty Name="KullaniciID" ColumnName="KullaniciID" />
+          <ScalarProperty Name="TurID" ColumnName="TurID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tbl_KapiGiris">
+      <EntityTypeMapping TypeName="RequestTrackkingSystemModel.tbl_KapiGiris">
+        <MappingFragment StoreEntitySet="tbl_KapiGiris">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="GelenNot" ColumnName="GelenNot" />
+          <ScalarProperty Name="IlgiliKullaniciID" ColumnName="IlgiliKullaniciID" />
+          <ScalarProperty Name="IslemKulID" ColumnName="IslemKulID" />
+          <ScalarProperty Name="DurumID" ColumnName="DurumID" />
+          <ScalarProperty Name="EklenmeTarihi" ColumnName="EklenmeTarihi" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tbl_KapiGirisKisi">
+      <EntityTypeMapping TypeName="RequestTrackkingSystemModel.tbl_KapiGirisKisi">
+        <MappingFragment StoreEntitySet="tbl_KapiGirisKisi">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="KapiGirisID" ColumnName="KapiGirisID" />
+          <ScalarProperty Name="KisiID" ColumnName="KisiID" />
+          <ScalarProperty Name="KisiNot" ColumnName="KisiNot" />
+          <ScalarProperty Name="GirisTarihi" ColumnName="GirisTarihi" />
+          <ScalarProperty Name="isGeldi" ColumnName="isGeldi" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tbl_KapiGirisSurec">
+      <EntityTypeMapping TypeName="RequestTrackkingSystemModel.tbl_KapiGirisSurec">
+        <MappingFragment StoreEntitySet="tbl_KapiGirisSurec">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="KapiGirisID" ColumnName="KapiGirisID" />
+          <ScalarProperty Name="TurID" ColumnName="TurID" />
+          <ScalarProperty Name="Aciklama" ColumnName="Aciklama" />
+          <ScalarProperty Name="IslemKulID" ColumnName="IslemKulID" />
+          <ScalarProperty Name="EklenmeTarihi" ColumnName="EklenmeTarihi" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tbl_Kategori">
+      <EntityTypeMapping TypeName="RequestTrackkingSystemModel.tbl_Kategori">
+        <MappingFragment StoreEntitySet="tbl_Kategori">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="Adi" ColumnName="Adi" />
+          <ScalarProperty Name="UstID" ColumnName="UstID" />
+          <ScalarProperty Name="TurID" ColumnName="TurID" />
+          <ScalarProperty Name="SiraNo" ColumnName="SiraNo" />
+          <ScalarProperty Name="Renk" ColumnName="Renk" />
+          <ScalarProperty Name="YaziRenk" ColumnName="YaziRenk" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tbl_Kisi">
+      <EntityTypeMapping TypeName="RequestTrackkingSystemModel.tbl_Kisi">
+        <MappingFragment StoreEntitySet="tbl_Kisi">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="AdSoyad" ColumnName="AdSoyad" />
+          <ScalarProperty Name="TCK" ColumnName="TCK" />
+          <ScalarProperty Name="DogumTarihi" ColumnName="DogumTarihi" />
+          <ScalarProperty Name="Cinsiyet" ColumnName="Cinsiyet" />
+          <ScalarProperty Name="MedeniDurum" ColumnName="MedeniDurum" />
+          <ScalarProperty Name="IslemKulID" ColumnName="IslemKulID" />
+          <ScalarProperty Name="EklenmeTarihi" ColumnName="EklenmeTarihi" />
+          <ScalarProperty Name="SicilNo" ColumnName="SicilNo" />
+          <ScalarProperty Name="EPosta" ColumnName="EPosta" />
+          <ScalarProperty Name="Aciklama" ColumnName="Aciklama" />
+          <ScalarProperty Name="EgitimDurumu" ColumnName="EgitimDurumu" />
+          <ScalarProperty Name="GorevTanimi" ColumnName="GorevTanimi" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tbl_KisiGorev">
+      <EntityTypeMapping TypeName="RequestTrackkingSystemModel.tbl_KisiGorev">
+        <MappingFragment StoreEntitySet="tbl_KisiGorev">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="Aciklama" ColumnName="Aciklama" />
+          <ScalarProperty Name="KisiID" ColumnName="KisiID" />
+          <ScalarProperty Name="IlID" ColumnName="IlID" />
+          <ScalarProperty Name="IlceID" ColumnName="IlceID" />
+          <ScalarProperty Name="isAktif" ColumnName="isAktif" />
+          <ScalarProperty Name="GorevKategoriID" ColumnName="GorevKategoriID" />
+          <ScalarProperty Name="isIlgili" ColumnName="isIlgili" />
+          <ScalarProperty Name="EklenmeTarihi" ColumnName="EklenmeTarihi" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tbl_KisiMernis">
+      <EntityTypeMapping TypeName="RequestTrackkingSystemModel.tbl_KisiMernis">
+        <MappingFragment StoreEntitySet="tbl_KisiMernis">
+          <ScalarProperty Name="TCK" ColumnName="TCK" />
+          <ScalarProperty Name="AdSoyad" ColumnName="AdSoyad" />
+          <ScalarProperty Name="Cinsiyet" ColumnName="Cinsiyet" />
+          <ScalarProperty Name="DogumTarihi" ColumnName="DogumTarihi" />
+          <ScalarProperty Name="MedeniHal" ColumnName="MedeniHal" />
+          <ScalarProperty Name="NufusIlID" ColumnName="NufusIlID" />
+          <ScalarProperty Name="NufusIlceID" ColumnName="NufusIlceID" />
+          <ScalarProperty Name="DogumYeri" ColumnName="DogumYeri" />
+          <ScalarProperty Name="AnaAdi" ColumnName="AnaAdi" />
+          <ScalarProperty Name="BabaAdi" ColumnName="BabaAdi" />
+          <ScalarProperty Name="SonSorguTarihi" ColumnName="SonSorguTarihi" />
+          <ScalarProperty Name="SorgulanmaSayisi" ColumnName="SorgulanmaSayisi" />
+          <ScalarProperty Name="SonIslemKullaniciID" ColumnName="SonIslemKullaniciID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tbl_KisiSenkronizasyon">
+      <EntityTypeMapping TypeName="RequestTrackkingSystemModel.tbl_KisiSenkronizasyon">
+        <MappingFragment StoreEntitySet="tbl_KisiSenkronizasyon">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="TCK" ColumnName="TCK" />
+          <ScalarProperty Name="Adsoyad" ColumnName="Adsoyad" />
+          <ScalarProperty Name="DogumTarihi" ColumnName="DogumTarihi" />
+          <ScalarProperty Name="Cinsiyet" ColumnName="Cinsiyet" />
+          <ScalarProperty Name="MedeniDurum" ColumnName="MedeniDurum" />
+          <ScalarProperty Name="SicilNo" ColumnName="SicilNo" />
+          <ScalarProperty Name="Eposta" ColumnName="Eposta" />
+          <ScalarProperty Name="Aciklama" ColumnName="Aciklama" />
+          <ScalarProperty Name="EgitimDurumu" ColumnName="EgitimDurumu" />
+          <ScalarProperty Name="Telefon1" ColumnName="Telefon1" />
+          <ScalarProperty Name="Telefon1Aciklama" ColumnName="Telefon1Aciklama" />
+          <ScalarProperty Name="Telefon2" ColumnName="Telefon2" />
+          <ScalarProperty Name="Telefon2Aciklama" ColumnName="Telefon2Aciklama" />
+          <ScalarProperty Name="Telefon3" ColumnName="Telefon3" />
+          <ScalarProperty Name="Telefon3Aciklama" ColumnName="Telefon3Aciklama" />
+          <ScalarProperty Name="Telefon4" ColumnName="Telefon4" />
+          <ScalarProperty Name="Telefon4Aciklama" ColumnName="Telefon4Aciklama" />
+          <ScalarProperty Name="GorevKategoriID" ColumnName="GorevKategoriID" />
+          <ScalarProperty Name="GorevIl" ColumnName="GorevIl" />
+          <ScalarProperty Name="GorevIlce" ColumnName="GorevIlce" />
+          <ScalarProperty Name="GorevAciklama" ColumnName="GorevAciklama" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tbl_KisiTelefon">
+      <EntityTypeMapping TypeName="RequestTrackkingSystemModel.tbl_KisiTelefon">
+        <MappingFragment StoreEntitySet="tbl_KisiTelefon">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="KisiID" ColumnName="KisiID" />
+          <ScalarProperty Name="Numara" ColumnName="Numara" />
+          <ScalarProperty Name="isVarsayilan" ColumnName="isVarsayilan" />
+          <ScalarProperty Name="isMobile" ColumnName="isMobile" />
+          <ScalarProperty Name="Aciklama" ColumnName="Aciklama" />
+          <ScalarProperty Name="isYurtDisi" ColumnName="isYurtDisi" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tbl_KulIlgiliKullanici">
+      <EntityTypeMapping TypeName="RequestTrackkingSystemModel.tbl_KulIlgiliKullanici">
+        <MappingFragment StoreEntitySet="tbl_KulIlgiliKullanici">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="KulID" ColumnName="KulID" />
+          <ScalarProperty Name="IlgiliKulID" ColumnName="IlgiliKulID" />
+          <ScalarProperty Name="TurID" ColumnName="TurID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tbl_Kullanici">
+      <EntityTypeMapping TypeName="RequestTrackkingSystemModel.tbl_Kullanici">
+        <MappingFragment StoreEntitySet="tbl_Kullanici">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="KisiID" ColumnName="KisiID" />
+          <ScalarProperty Name="Sifre" ColumnName="Sifre" />
+          <ScalarProperty Name="EklenmeTarihi" ColumnName="EklenmeTarihi" />
+          <ScalarProperty Name="isAktif" ColumnName="isAktif" />
+          <ScalarProperty Name="GrupID" ColumnName="GrupID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tbl_KullaniciAyar">
+      <EntityTypeMapping TypeName="RequestTrackkingSystemModel.tbl_KullaniciAyar">
+        <MappingFragment StoreEntitySet="tbl_KullaniciAyar">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="KisaAd" ColumnName="KisaAd" />
+          <ScalarProperty Name="Aciklama" ColumnName="Aciklama" />
+          <ScalarProperty Name="KullaniciID" ColumnName="KullaniciID" />
+          <ScalarProperty Name="Deger" ColumnName="Deger" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tbl_KullaniciLog">
+      <EntityTypeMapping TypeName="RequestTrackkingSystemModel.tbl_KullaniciLog">
+        <MappingFragment StoreEntitySet="tbl_KullaniciLog">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="KullaniciID" ColumnName="KullaniciID" />
+          <ScalarProperty Name="Tur" ColumnName="Tur" />
+          <ScalarProperty Name="LogTur" ColumnName="LogTur" />
+          <ScalarProperty Name="IPAdress" ColumnName="IPAdress" />
+          <ScalarProperty Name="Tarih" ColumnName="Tarih" />
+          <ScalarProperty Name="SayfaLink" ColumnName="SayfaLink" />
+          <ScalarProperty Name="OncekiLink" ColumnName="OncekiLink" />
+          <ScalarProperty Name="Aciklama" ColumnName="Aciklama" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tbl_Mesajlasma">
+      <EntityTypeMapping TypeName="RequestTrackkingSystemModel.tbl_Mesajlasma">
+        <MappingFragment StoreEntitySet="tbl_Mesajlasma">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="Mesaj" ColumnName="Mesaj" />
+          <ScalarProperty Name="GonderenKullaniciID" ColumnName="GonderenKullaniciID" />
+          <ScalarProperty Name="EklenmeTarihi" ColumnName="EklenmeTarihi" />
+          <ScalarProperty Name="AlanKullaniciID" ColumnName="AlanKullaniciID" />
+          <ScalarProperty Name="AlanGrupID" ColumnName="AlanGrupID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tbl_MesajlasmaLog">
+      <EntityTypeMapping TypeName="RequestTrackkingSystemModel.tbl_MesajlasmaLog">
+        <MappingFragment StoreEntitySet="tbl_MesajlasmaLog">
+          <ScalarProperty Name="KulID" ColumnName="KulID" />
+          <ScalarProperty Name="OkunmaTarihi" ColumnName="OkunmaTarihi" />
+          <ScalarProperty Name="MesajID" ColumnName="MesajID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tbl_Not">
+      <EntityTypeMapping TypeName="RequestTrackkingSystemModel.tbl_Not">
+        <MappingFragment StoreEntitySet="tbl_Not">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="KisiID" ColumnName="KisiID" />
+          <ScalarProperty Name="Aciklama" ColumnName="Aciklama" />
+          <ScalarProperty Name="EklenmeTarihi" ColumnName="EklenmeTarihi" />
+          <ScalarProperty Name="EkleyenKulID" ColumnName="EkleyenKulID" />
+          <ScalarProperty Name="GrupID" ColumnName="GrupID" />
+          <ScalarProperty Name="NotYetkiID" ColumnName="NotYetkiID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tbl_PrintMode">
+      <EntityTypeMapping TypeName="RequestTrackkingSystemModel.tbl_PrintMode">
+        <MappingFragment StoreEntitySet="tbl_PrintMode">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="Genislik" ColumnName="Genislik" />
+          <ScalarProperty Name="Yukseklik" ColumnName="Yukseklik" />
+          <ScalarProperty Name="Ad" ColumnName="Ad" />
+          <ScalarProperty Name="Resim" ColumnName="Resim" />
+          <ScalarProperty Name="PaddingTop" ColumnName="PaddingTop" />
+          <ScalarProperty Name="PaddingRight" ColumnName="PaddingRight" />
+          <ScalarProperty Name="PaddingBottom" ColumnName="PaddingBottom" />
+          <ScalarProperty Name="PaddingLeft" ColumnName="PaddingLeft" />
+          <ScalarProperty Name="Header" ColumnName="Header" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tbl_Rol">
+      <EntityTypeMapping TypeName="RequestTrackkingSystemModel.tbl_Rol">
+        <MappingFragment StoreEntitySet="tbl_Rol">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="Adi" ColumnName="Adi" />
+          <ScalarProperty Name="UstID" ColumnName="UstID" />
+          <ScalarProperty Name="SiraNo" ColumnName="SiraNo" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tbl_SikKullanilanlarMenu">
+      <EntityTypeMapping TypeName="RequestTrackkingSystemModel.tbl_SikKullanilanlarMenu">
+        <MappingFragment StoreEntitySet="tbl_SikKullanilanlarMenu">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="KulID" ColumnName="KulID" />
+          <ScalarProperty Name="Baslik" ColumnName="Baslik" />
+          <ScalarProperty Name="Link" ColumnName="Link" />
+          <ScalarProperty Name="SiraNo" ColumnName="SiraNo" />
+          <ScalarProperty Name="EklenmeTarihi" ColumnName="EklenmeTarihi" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tbl_SistemSmsAyar">
+      <EntityTypeMapping TypeName="RequestTrackkingSystemModel.tbl_SistemSmsAyar">
+        <MappingFragment StoreEntitySet="tbl_SistemSmsAyar">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="Turu" ColumnName="Turu" />
+          <ScalarProperty Name="SecimTurID" ColumnName="SecimTurID" />
+          <ScalarProperty Name="Icerik" ColumnName="Icerik" />
+          <ScalarProperty Name="EklenmeTarihi" ColumnName="EklenmeTarihi" />
+          <ScalarProperty Name="isAktif" ColumnName="isAktif" />
+          <ScalarProperty Name="IslemKulID" ColumnName="IslemKulID" />
+          <ScalarProperty Name="isBirlikte" ColumnName="isBirlikte" />
+          <ScalarProperty Name="TelefonDeger" ColumnName="TelefonDeger" />
+          <ScalarProperty Name="MailDeger" ColumnName="MailDeger" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tbl_SistemSmsMailKisi">
+      <EntityTypeMapping TypeName="RequestTrackkingSystemModel.tbl_SistemSmsMailKisi">
+        <MappingFragment StoreEntitySet="tbl_SistemSmsMailKisi">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="SistemID" ColumnName="SistemID" />
+          <ScalarProperty Name="KisiID" ColumnName="KisiID" />
+          <ScalarProperty Name="Telefon" ColumnName="Telefon" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tbl_SMS">
+      <EntityTypeMapping TypeName="RequestTrackkingSystemModel.tbl_SMS">
+        <MappingFragment StoreEntitySet="tbl_SMS">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="KayitID" ColumnName="KayitID" />
+          <ScalarProperty Name="KisiID" ColumnName="KisiID" />
+          <ScalarProperty Name="Mesaj" ColumnName="Mesaj" />
+          <ScalarProperty Name="TurID" ColumnName="TurID" />
+          <ScalarProperty Name="isGonderildi" ColumnName="isGonderildi" />
+          <ScalarProperty Name="GonderilmeTarihi" ColumnName="GonderilmeTarihi" />
+          <ScalarProperty Name="IslemKulID" ColumnName="IslemKulID" />
+          <ScalarProperty Name="EklenmeTarihi" ColumnName="EklenmeTarihi" />
+          <ScalarProperty Name="DurumBilgisi" ColumnName="DurumBilgisi" />
+          <ScalarProperty Name="DenemeSayisi" ColumnName="DenemeSayisi" />
+          <ScalarProperty Name="MesajTakipID" ColumnName="MesajTakipID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tbl_Tekrar">
+      <EntityTypeMapping TypeName="RequestTrackkingSystemModel.tbl_Tekrar">
+        <MappingFragment StoreEntitySet="tbl_Tekrar">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="ZamanTurID" ColumnName="ZamanTurID" />
+          <ScalarProperty Name="Sefer" ColumnName="Sefer" />
+          <ScalarProperty Name="Sayi" ColumnName="Sayi" />
+          <ScalarProperty Name="Gun" ColumnName="Gun" />
+          <ScalarProperty Name="SonTarihi" ColumnName="SonTarihi" />
+          <ScalarProperty Name="EklenmeTarihi" ColumnName="EklenmeTarihi" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tbl_TempDokuman">
+      <EntityTypeMapping TypeName="RequestTrackkingSystemModel.tbl_TempDokuman">
+        <MappingFragment StoreEntitySet="tbl_TempDokuman">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="Dosya" ColumnName="Dosya" />
+          <ScalarProperty Name="KullaniciID" ColumnName="KullaniciID" />
+          <ScalarProperty Name="Uzanti" ColumnName="Uzanti" />
+          <ScalarProperty Name="DosyaAdi" ColumnName="DosyaAdi" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tbl_Sekreterya">
+      <EntityTypeMapping TypeName="RequestTrackkingSystemModel.tbl_Sekreterya">
+        <MappingFragment StoreEntitySet="tbl_Sekreterya">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="TurID" ColumnName="TurID" />
+          <ScalarProperty Name="KisiID" ColumnName="KisiID" />
+          <ScalarProperty Name="ArananKulID" ColumnName="ArananKulID" />
+          <ScalarProperty Name="KategoriID" ColumnName="KategoriID" />
+          <ScalarProperty Name="DurumID" ColumnName="DurumID" />
+          <ScalarProperty Name="Aciklama" ColumnName="Aciklama" />
+          <ScalarProperty Name="IslemKulID" ColumnName="IslemKulID" />
+          <ScalarProperty Name="EklenmeTarihi" ColumnName="EklenmeTarihi" />
+          <ScalarProperty Name="GrupID" ColumnName="GrupID" />
+          <ScalarProperty Name="GelisYoluID" ColumnName="GelisYoluID" />
+          <ScalarProperty Name="KisiNot" ColumnName="KisiNot" />
+          <ScalarProperty Name="isGonderildi" ColumnName="isGonderildi" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tbl_SekreteryaSurec">
+      <EntityTypeMapping TypeName="RequestTrackkingSystemModel.tbl_SekreteryaSurec">
+        <MappingFragment StoreEntitySet="tbl_SekreteryaSurec">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="TurID" ColumnName="TurID" />
+          <ScalarProperty Name="SekreteryaID" ColumnName="SekreteryaID" />
+          <ScalarProperty Name="Aciklama" ColumnName="Aciklama" />
+          <ScalarProperty Name="IslemKulID" ColumnName="IslemKulID" />
+          <ScalarProperty Name="EklenmeTarihi" ColumnName="EklenmeTarihi" />
+          <ScalarProperty Name="YonlendirilenKulID" ColumnName="YonlendirilenKulID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tbl_Talimat">
+      <EntityTypeMapping TypeName="RequestTrackkingSystemModel.tbl_Talimat">
+        <MappingFragment StoreEntitySet="tbl_Talimat">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="Baslik" ColumnName="Baslik" />
+          <ScalarProperty Name="IslemKulID" ColumnName="IslemKulID" />
+          <ScalarProperty Name="EklenmeTarihi" ColumnName="EklenmeTarihi" />
+          <ScalarProperty Name="GrupID" ColumnName="GrupID" />
+          <ScalarProperty Name="isGenel" ColumnName="isGenel" />
+          <ScalarProperty Name="ZiyaretID" ColumnName="ZiyaretID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tbl_TalimatGorev">
+      <EntityTypeMapping TypeName="RequestTrackkingSystemModel.tbl_TalimatGorev">
+        <MappingFragment StoreEntitySet="tbl_TalimatGorev">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="TalimatID" ColumnName="TalimatID" />
+          <ScalarProperty Name="Aciklama" ColumnName="Aciklama" />
+          <ScalarProperty Name="Baslik" ColumnName="Baslik" />
+          <ScalarProperty Name="DurumID" ColumnName="DurumID" />
+          <ScalarProperty Name="SonTarih" ColumnName="SonTarih" />
+          <ScalarProperty Name="EklenmeTarihi" ColumnName="EklenmeTarihi" />
+          <ScalarProperty Name="IslemKulID" ColumnName="IslemKulID" />
+          <ScalarProperty Name="IlgiliGorevID" ColumnName="IlgiliGorevID" />
+          <ScalarProperty Name="ProgramTarihiTotal" ColumnName="ProgramTarihiTotal" />
+          <ScalarProperty Name="IlgiliProgramID" ColumnName="IlgiliProgramID" />
+          <ScalarProperty Name="KopyaID" ColumnName="KopyaID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tbl_TalimatGorevSurec">
+      <EntityTypeMapping TypeName="RequestTrackkingSystemModel.tbl_TalimatGorevSurec">
+        <MappingFragment StoreEntitySet="tbl_TalimatGorevSurec">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="TalimatGorevID" ColumnName="TalimatGorevID" />
+          <ScalarProperty Name="Aciklama" ColumnName="Aciklama" />
+          <ScalarProperty Name="IslemKulID" ColumnName="IslemKulID" />
+          <ScalarProperty Name="TalimatSurecTurID" ColumnName="TalimatSurecTurID" />
+          <ScalarProperty Name="EklenmeTarihi" ColumnName="EklenmeTarihi" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tbl_TalimatGorevYetki">
+      <EntityTypeMapping TypeName="RequestTrackkingSystemModel.tbl_TalimatGorevYetki">
+        <MappingFragment StoreEntitySet="tbl_TalimatGorevYetki">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="TalimatGorevID" ColumnName="TalimatGorevID" />
+          <ScalarProperty Name="IlgiliKulID" ColumnName="IlgiliKulID" />
+          <ScalarProperty Name="IlgiliGrupID" ColumnName="IlgiliGrupID" />
+          <ScalarProperty Name="EklenmeTarihi" ColumnName="EklenmeTarihi" />
+          <ScalarProperty Name="IslemKulID" ColumnName="IslemKulID" />
+          <ScalarProperty Name="isAktif" ColumnName="isAktif" />
+          <ScalarProperty Name="TalimatGorevSurecID" ColumnName="TalimatGorevSurecID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tbl_Talep">
+      <EntityTypeMapping TypeName="RequestTrackkingSystemModel.tbl_Talep">
+        <MappingFragment StoreEntitySet="tbl_Talep">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="KisiID" ColumnName="KisiID" />
+          <ScalarProperty Name="Aciklama" ColumnName="Aciklama" />
+          <ScalarProperty Name="IlID" ColumnName="IlID" />
+          <ScalarProperty Name="IlceID" ColumnName="IlceID" />
+          <ScalarProperty Name="EklenmeTarihi" ColumnName="EklenmeTarihi" />
+          <ScalarProperty Name="DurumID" ColumnName="DurumID" />
+          <ScalarProperty Name="OncelikID" ColumnName="OncelikID" />
+          <ScalarProperty Name="IlgiliKurumID" ColumnName="IlgiliKurumID" />
+          <ScalarProperty Name="IslemKulID" ColumnName="IslemKulID" />
+          <ScalarProperty Name="GrupID" ColumnName="GrupID" />
+          <ScalarProperty Name="HatirlatmaTarihi" ColumnName="HatirlatmaTarihi" />
+          <ScalarProperty Name="isDeleted" ColumnName="isDeleted" />
+          <ScalarProperty Name="GelisYoluID" ColumnName="GelisYoluID" />
+          <ScalarProperty Name="IletenKulID" ColumnName="IletenKulID" />
+          <ScalarProperty Name="GelisTarihi" ColumnName="GelisTarihi" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tbl_TalepKategori">
+      <EntityTypeMapping TypeName="RequestTrackkingSystemModel.tbl_TalepKategori">
+        <MappingFragment StoreEntitySet="tbl_TalepKategori">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="TalepID" ColumnName="TalepID" />
+          <ScalarProperty Name="KategoriID" ColumnName="KategoriID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tbl_TalepReferans">
+      <EntityTypeMapping TypeName="RequestTrackkingSystemModel.tbl_TalepReferans">
+        <MappingFragment StoreEntitySet="tbl_TalepReferans">
+          <ScalarProperty Name="TalepID" ColumnName="TalepID" />
+          <ScalarProperty Name="KisiID" ColumnName="KisiID" />
+          <ScalarProperty Name="ReferansNot" ColumnName="ReferansNot" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tbl_TalepSurec">
+      <EntityTypeMapping TypeName="RequestTrackkingSystemModel.tbl_TalepSurec">
+        <MappingFragment StoreEntitySet="tbl_TalepSurec">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="TalepID" ColumnName="TalepID" />
+          <ScalarProperty Name="Aciklama" ColumnName="Aciklama" />
+          <ScalarProperty Name="TurID" ColumnName="TurID" />
+          <ScalarProperty Name="IslemKulID" ColumnName="IslemKulID" />
+          <ScalarProperty Name="EklenmeTarihi" ColumnName="EklenmeTarihi" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tbl_TalepYetki">
+      <EntityTypeMapping TypeName="RequestTrackkingSystemModel.tbl_TalepYetki">
+        <MappingFragment StoreEntitySet="tbl_TalepYetki">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="TalepID" ColumnName="TalepID" />
+          <ScalarProperty Name="GrupID" ColumnName="GrupID" />
+          <ScalarProperty Name="YetkiTurID" ColumnName="YetkiTurID" />
+          <ScalarProperty Name="EklenmeTarihi" ColumnName="EklenmeTarihi" />
+          <ScalarProperty Name="EkleyenKullaniciID" ColumnName="EkleyenKullaniciID" />
+          <ScalarProperty Name="KullaniciID" ColumnName="KullaniciID" />
+          <ScalarProperty Name="SurecID" ColumnName="SurecID" />
+          <ScalarProperty Name="isAktif" ColumnName="isAktif" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tbl_ProgramEntegre">
+      <EntityTypeMapping TypeName="RequestTrackkingSystemModel.tbl_ProgramEntegre">
+        <MappingFragment StoreEntitySet="tbl_ProgramEntegre">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="Mail" ColumnName="Mail" />
+          <ScalarProperty Name="IslemKulID" ColumnName="IslemKulID" />
+          <ScalarProperty Name="TakvimID" ColumnName="TakvimID" />
+          <ScalarProperty Name="AccessToken" ColumnName="AccessToken" />
+          <ScalarProperty Name="isIzinVerildi" ColumnName="isIzinVerildi" />
+          <ScalarProperty Name="EklenmeTarihi" ColumnName="EklenmeTarihi" />
+          <ScalarProperty Name="IlgiliKullaniciID" ColumnName="IlgiliKullaniciID" />
+          <ScalarProperty Name="isIlk" ColumnName="isIlk" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tbl_SiralamaGrup">
+      <EntityTypeMapping TypeName="RequestTrackkingSystemModel.tbl_SiralamaGrup">
+        <MappingFragment StoreEntitySet="tbl_SiralamaGrup">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="Adi" ColumnName="Adi" />
+          <ScalarProperty Name="Puan" ColumnName="Puan" />
+          <ScalarProperty Name="EklenmeTarihi" ColumnName="EklenmeTarihi" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tbl_Ziyaret">
+      <EntityTypeMapping TypeName="RequestTrackkingSystemModel.tbl_Ziyaret">
+        <MappingFragment StoreEntitySet="tbl_Ziyaret">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="TurID" ColumnName="TurID" />
+          <ScalarProperty Name="Aciklama" ColumnName="Aciklama" />
+          <ScalarProperty Name="IslemKulID" ColumnName="IslemKulID" />
+          <ScalarProperty Name="IlgiliKullaniciID" ColumnName="IlgiliKullaniciID" />
+          <ScalarProperty Name="EklenmeTarihi" ColumnName="EklenmeTarihi" />
+          <ScalarProperty Name="DurumID" ColumnName="DurumID" />
+          <ScalarProperty Name="KategoriID" ColumnName="KategoriID" />
+          <ScalarProperty Name="GrupID" ColumnName="GrupID" />
+          <ScalarProperty Name="IlID" ColumnName="IlID" />
+          <ScalarProperty Name="IlceID" ColumnName="IlceID" />
+          <ScalarProperty Name="GelisTarihi" ColumnName="GelisTarihi" />
+          <ScalarProperty Name="ProgramSuresi" ColumnName="ProgramSuresi" />
+          <ScalarProperty Name="ProgramOncelikID" ColumnName="ProgramOncelikID" />
+          <ScalarProperty Name="isKurumIci" ColumnName="isKurumIci" />
+          <ScalarProperty Name="TekrarID" ColumnName="TekrarID" />
+          <ScalarProperty Name="isDeleted" ColumnName="isDeleted" />
+          <ScalarProperty Name="isKatilimciSms" ColumnName="isKatilimciSms" />
+          <ScalarProperty Name="isGoster" ColumnName="isGoster" />
+          <ScalarProperty Name="isEntegre" ColumnName="isEntegre" />
+          <ScalarProperty Name="EntryID" ColumnName="EntryID" />
+          <ScalarProperty Name="isDuzenlendi" ColumnName="isDuzenlendi" />
+          <ScalarProperty Name="ProgramNotu" ColumnName="ProgramNotu" />
+          <ScalarProperty Name="SekreteryaID" ColumnName="SekreteryaID" />
+          <ScalarProperty Name="SiralamaGrupID" ColumnName="SiralamaGrupID" />
+          <ScalarProperty Name="GelisYoluID" ColumnName="GelisYoluID" />
+          <ScalarProperty Name="isGonderildi" ColumnName="isGonderildi" />
+          <ScalarProperty Name="ProgramEntegreID" ColumnName="ProgramEntegreID" />
+          <ScalarProperty Name="IlgiliKayitID" ColumnName="IlgiliKayitID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tbl_ZiyaretDurum">
+      <EntityTypeMapping TypeName="RequestTrackkingSystemModel.tbl_ZiyaretDurum">
+        <MappingFragment StoreEntitySet="tbl_ZiyaretDurum">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="Adi" ColumnName="Adi" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tbl_ZiyaretKisi">
+      <EntityTypeMapping TypeName="RequestTrackkingSystemModel.tbl_ZiyaretKisi">
+        <MappingFragment StoreEntitySet="tbl_ZiyaretKisi">
+          <ScalarProperty Name="ZiyaretID" ColumnName="ZiyaretID" />
+          <ScalarProperty Name="KisiID" ColumnName="KisiID" />
+          <ScalarProperty Name="isTemsilci" ColumnName="isTemsilci" />
+          <ScalarProperty Name="ZiyaretKisiNot" ColumnName="ZiyaretKisiNot" />
+          <ScalarProperty Name="isReferans" ColumnName="isReferans" />
+          <ScalarProperty Name="isGeldi" ColumnName="isGeldi" />
+          <ScalarProperty Name="GelisTarihi" ColumnName="GelisTarihi" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tbl_ZiyaretSurec">
+      <EntityTypeMapping TypeName="RequestTrackkingSystemModel.tbl_ZiyaretSurec">
+        <MappingFragment StoreEntitySet="tbl_ZiyaretSurec">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="ZiyaretID" ColumnName="ZiyaretID" />
+          <ScalarProperty Name="Aciklama" ColumnName="Aciklama" />
+          <ScalarProperty Name="TurID" ColumnName="TurID" />
+          <ScalarProperty Name="EklenmeTarihi" ColumnName="EklenmeTarihi" />
+          <ScalarProperty Name="IslemKulID" ColumnName="IslemKulID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tbl_KisiSenkronizasyonBackup">
+      <EntityTypeMapping TypeName="RequestTrackkingSystemModel.tbl_KisiSenkronizasyonBackup">
+        <MappingFragment StoreEntitySet="tbl_KisiSenkronizasyonBackup">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="TCK" ColumnName="TCK" />
+          <ScalarProperty Name="Adsoyad" ColumnName="Adsoyad" />
+          <ScalarProperty Name="DogumTarihi" ColumnName="DogumTarihi" />
+          <ScalarProperty Name="Cinsiyet" ColumnName="Cinsiyet" />
+          <ScalarProperty Name="MedeniDurum" ColumnName="MedeniDurum" />
+          <ScalarProperty Name="SicilNo" ColumnName="SicilNo" />
+          <ScalarProperty Name="Eposta" ColumnName="Eposta" />
+          <ScalarProperty Name="Aciklama" ColumnName="Aciklama" />
+          <ScalarProperty Name="EgitimDurumu" ColumnName="EgitimDurumu" />
+          <ScalarProperty Name="Telefon1" ColumnName="Telefon1" />
+          <ScalarProperty Name="Telefon1Aciklama" ColumnName="Telefon1Aciklama" />
+          <ScalarProperty Name="Telefon2" ColumnName="Telefon2" />
+          <ScalarProperty Name="Telefon2Aciklama" ColumnName="Telefon2Aciklama" />
+          <ScalarProperty Name="Telefon3" ColumnName="Telefon3" />
+          <ScalarProperty Name="Telefon3Aciklama" ColumnName="Telefon3Aciklama" />
+          <ScalarProperty Name="Telefon4" ColumnName="Telefon4" />
+          <ScalarProperty Name="Telefon4Aciklama" ColumnName="Telefon4Aciklama" />
+          <ScalarProperty Name="GorevKategoriID" ColumnName="GorevKategoriID" />
+          <ScalarProperty Name="GorevIl" ColumnName="GorevIl" />
+          <ScalarProperty Name="GorevIlce" ColumnName="GorevIlce" />
+          <ScalarProperty Name="GorevAciklama" ColumnName="GorevAciklama" />
+          <ScalarProperty Name="EklenmeTarihi" ColumnName="EklenmeTarihi" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <AssociationSetMapping Name="tbl_GrupRol" TypeName="RequestTrackkingSystemModel.tbl_GrupRol" StoreEntitySet="tbl_GrupRol">
+      <EndProperty Name="tbl_Grup">
+        <ScalarProperty Name="ID" ColumnName="GrupID" />
+      </EndProperty>
+      <EndProperty Name="tbl_Rol">
+        <ScalarProperty Name="ID" ColumnName="RolID" />
+      </EndProperty>
+    </AssociationSetMapping>
+    <AssociationSetMapping Name="tbl_KullaniciRol" TypeName="RequestTrackkingSystemModel.tbl_KullaniciRol" StoreEntitySet="tbl_KullaniciRol">
+      <EndProperty Name="tbl_Kullanici">
+        <ScalarProperty Name="ID" ColumnName="KullaniciID" />
+      </EndProperty>
+      <EndProperty Name="tbl_Rol">
+        <ScalarProperty Name="ID" ColumnName="RolID" />
+      </EndProperty>
+    </AssociationSetMapping>
+    <AssociationSetMapping Name="tbl_ZiyaretTalep" TypeName="RequestTrackkingSystemModel.tbl_ZiyaretTalep" StoreEntitySet="tbl_ZiyaretTalep">
+      <EndProperty Name="tbl_Talep">
+        <ScalarProperty Name="ID" ColumnName="TalepID" />
+      </EndProperty>
+      <EndProperty Name="tbl_Ziyaret">
+        <ScalarProperty Name="ID" ColumnName="ZiyaretID" />
+      </EndProperty>
+    </AssociationSetMapping>
+  </EntityContainerMapping>
+</Mapping>
