@@ -1,0 +1,100 @@
+﻿@model IEnumerable<RequestTrackingSystem.Models.tbl_Kisi>
+
+@{
+    ViewBag.Title = "User";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>User</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.AdSoyad)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.TCK)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.DogumTarihi)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Cinsiyet)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.MedeniDurum)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.IslemKulID)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.EklenmeTarihi)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.SicilNo)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.EPosta)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Aciklama)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.EgitimDurumu)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.GorevTanimi)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.AdSoyad)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.TCK)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.DogumTarihi)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Cinsiyet)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.MedeniDurum)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.IslemKulID)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.EklenmeTarihi)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.SicilNo)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.EPosta)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Aciklama)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.EgitimDurumu)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.GorevTanimi)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.ID }) |
+            @Html.ActionLink("Details", "Details", new { id=item.ID }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.ID })
+        </td>
+    </tr>
+}
+
+</table>

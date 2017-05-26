@@ -1,0 +1,71 @@
+﻿@model IEnumerable<RequestTrackingSystem.Models.tbl_Talep>
+
+@{
+    ViewBag.Title = "Talep";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Talep</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            Talep Numarası
+        </th>
+        <th>
+            Ad Soyad
+        </th>
+        <th>
+           Açıklama
+        </th>
+      
+        <th>
+            Eklenme Tarihi
+        </th>
+        <th>
+            Durum
+        </th>
+        
+        <th>
+         Ekleyen Kullanıcı
+        </th>
+    
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.ID  )
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.tbl_Kisi.AdSoyad)
+        </td>
+            <td>
+            @Html.DisplayFor(modelItem => item.Aciklama)
+        </td>
+    
+        <td>
+            @Html.DisplayFor(modelItem => item.EklenmeTarihi)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.DurumID)
+        </td>
+    
+        <td>
+            @Html.DisplayFor(modelItem => item.IletenKulID)
+        </td>
+
+          
+
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.ID }) |
+            @Html.ActionLink("Details", "Details", new { id=item.ID }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.ID })
+        </td>
+    </tr>
+}
+
+</table>
